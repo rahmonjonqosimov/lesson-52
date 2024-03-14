@@ -437,6 +437,7 @@ body {
             .list {
               display: flex;
               flex-direction: row;
+              justify-content: center;
               gap: 10px;
               margin-bottom: 24px;
               .m {
@@ -457,7 +458,7 @@ body {
                 }
               }
               .b {
-                width: 300px;
+                width: 100%;
               }
             }
             a {

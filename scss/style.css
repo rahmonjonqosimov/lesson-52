@@ -432,6 +432,7 @@ body main #hero .hero .cards .card h4 {
 body main #hero .hero .cards .card .list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 24px;
 }
@@ -453,7 +454,7 @@ body main #hero .hero .cards .card .list .list-item .h {
   width: 100px;
 }
 body main #hero .hero .cards .card .list .b {
-  width: 300px;
+  width: 100%;
 }
 body main #hero .hero .cards .card a {
   text-decoration: none;
