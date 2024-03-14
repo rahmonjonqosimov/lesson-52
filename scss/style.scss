@@ -27,6 +27,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          padding: 0 20px;
           a {
             img {
               width: 113px;
@@ -137,7 +138,7 @@ body {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                cursor: pointer;
+
                 input {
                   width: 100%;
                   outline: none;
@@ -155,6 +156,7 @@ body {
                   background: white;
                   border: 1px solid #cccccc;
                   border-radius: 8px;
+                  cursor: pointer;
                 }
               }
               #uz {
@@ -189,7 +191,6 @@ body {
             display: flex;
             align-items: center;
             border: 3px solid #131921;
-            width: 860px;
             display: flex;
             justify-content: center;
             border-radius: 8px;
@@ -200,37 +201,43 @@ body {
               background: #febd69;
               width: 45px;
               height: 40px;
-              border-top-right-radius: 4px;
-              border-bottom-right-radius: 4px;
+              border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
               position: absolute;
-              right: 0;
+              right: 2px;
               cursor: pointer;
             }
             .all {
               background: #e6e6e6;
               width: 45px;
               height: 40px;
-              border-top-left-radius: 4px;
-              border-bottom-left-radius: 4px;
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
               position: absolute;
-              left: 0;
+              left: 1.7px;
+              top: 1.7px;
               width: 50px;
+              height: 40px;
               padding-left: 5px;
               padding-right: 5px;
+              z-index: 1;
             }
             .search {
               width: 24px;
               margin-top: 4px;
+              margin-right: -4px;
             }
             input {
+              box-sizing: content-box;
               height: 40px;
               outline: none;
-              // border: 1px solid #febd69;
-              padding: 0 8px;
-              padding-left: 20px;
-              width: 774px;
+              bottom: none;
+              padding: 0 60px;
+              width: 760px;
+              border-radius: 10px;
+              border: 2px solid #232f3e;
               &:focus {
-                border: 3px solid #febd69;
+                border: 2px solid #febd69;
               }
             }
           }
@@ -238,7 +245,6 @@ body {
           .right {
             display: flex;
             align-items: center;
-
             .language {
               padding: 8px;
               border: 1px solid #131921;
@@ -305,20 +311,19 @@ body {
       .bottom-header {
         background: #232f3e;
         padding: 8px 0;
-
         .nav-items {
           width: 365px;
           height: 100vh;
           background: white;
           margin-left: -500px;
           transition: 0.7s linear;
-
           position: fixed;
           left: 0;
           top: 0;
           z-index: 100;
           .bx-x {
             position: absolute;
+            cursor: pointer;
             top: 30px;
             right: -50px;
           }
@@ -376,11 +381,13 @@ body {
           display: flex;
           align-items: center;
           justify-content: flex-start;
+          // padding: 0 20px;
           gap: 20px;
           .all {
             display: flex;
             align-items: center;
             gap: 5px;
+            cursor: pointer;
           }
           a {
             color: white;
@@ -394,7 +401,7 @@ body {
   }
   .black {
     position: absolute;
-    width: 3000px;
+    width: 197.63vh;
     height: 100vh;
     z-index: -10;
     top: 0;
@@ -413,6 +420,7 @@ body {
         align-items: flex-end;
         height: 660px;
         padding-bottom: 10px;
+
         .cards {
           display: grid;
           grid-template-columns: repeat(4, 1fr);

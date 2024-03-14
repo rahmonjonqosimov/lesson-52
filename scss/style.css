@@ -29,6 +29,7 @@ body header nav .top-header .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
 body header nav .top-header .top a {
   border: 1px solid #131921;
@@ -139,7 +140,6 @@ body header nav .top-header .top .center .orta .apply {
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
 }
 body header nav .top-header .top .center .orta .apply input {
   width: 100%;
@@ -158,6 +158,7 @@ body header nav .top-header .top .center .orta .apply button {
   background: white;
   border: 1px solid #cccccc;
   border-radius: 8px;
+  cursor: pointer;
 }
 body header nav .top-header .top .center .orta #uz {
   background-color: #f0f2f2;
@@ -189,7 +190,6 @@ body header nav .top-header .top form {
   display: flex;
   align-items: center;
   border: 3px solid #131921;
-  width: 860px;
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -201,37 +201,44 @@ body header nav .top-header .top form .c {
   background: #febd69;
   width: 45px;
   height: 40px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   position: absolute;
-  right: 0;
+  right: 2px;
   cursor: pointer;
 }
 body header nav .top-header .top form .all {
   background: #e6e6e6;
   width: 45px;
   height: 40px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   position: absolute;
-  left: 0;
+  left: 1.7px;
+  top: 1.7px;
   width: 50px;
+  height: 40px;
   padding-left: 5px;
   padding-right: 5px;
+  z-index: 1;
 }
 body header nav .top-header .top form .search {
   width: 24px;
   margin-top: 4px;
+  margin-right: -4px;
 }
 body header nav .top-header .top form input {
+  box-sizing: content-box;
   height: 40px;
   outline: none;
-  padding: 0 8px;
-  padding-left: 20px;
-  width: 774px;
+  bottom: none;
+  padding: 0 60px;
+  width: 760px;
+  border-radius: 10px;
+  border: 2px solid #232f3e;
 }
 body header nav .top-header .top form input:focus {
-  border: 3px solid #febd69;
+  border: 2px solid #febd69;
 }
 body header nav .top-header .top .right {
   display: flex;
@@ -314,6 +321,7 @@ body header nav .bottom-header .nav-items {
 }
 body header nav .bottom-header .nav-items .bx-x {
   position: absolute;
+  cursor: pointer;
   top: 30px;
   right: -50px;
 }
@@ -376,6 +384,7 @@ body header nav .bottom-header .menu .all {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 body header nav .bottom-header .menu a {
   color: white;
@@ -385,7 +394,7 @@ body header nav .bottom-header .menu a {
 }
 body .black {
   position: absolute;
-  width: 3000px;
+  width: 197.63vh;
   height: 100vh;
   z-index: -10;
   top: 0;
